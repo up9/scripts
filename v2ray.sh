@@ -50,7 +50,7 @@ checkSystem() {
         PMT="apt"
         CMD_INSTALL="apt install -y "
         CMD_REMOVE="apt remove -y "
-        CMD_UPGRADE="apt update && apt upgrade -y"
+        CMD_UPGRADE="apt update -y"
     else
         PMT="yum"
         CMD_INSTALL="yum install -y "
@@ -1061,7 +1061,7 @@ install() {
 
     configV2ray
 
-    setSelinux
+    #setSelinux
     installBBR
 
     start
